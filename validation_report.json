@@ -1,0 +1,127 @@
+[
+    {
+        "file": "prompt1.txt",
+        "issues": [
+            {
+                "issue_type": "Redundancy",
+                "description": "Sentences are highly similar (similarity: 0.81): 'Write a detailed guide about planting tomatoes.' and 'Make sure it is very detailed and descriptive.'",
+                "suggested_fix": "Consider rephrasing or combining these sentences to avoid repetition and improve clarity."
+            },
+            {
+                "issue_type": "Redundancy",
+                "description": "Sentences are highly similar (similarity: 0.81): 'Write a detailed guide about planting tomatoes.' and 'Ensure the guide is extremely detailed with many details.'",
+                "suggested_fix": "Consider rephrasing or combining these sentences to avoid repetition and improve clarity."
+            },
+            {
+                "issue_type": "Completeness",
+                "description": "Prompt asks to write/explain something but doesn't specify the target audience or desired tone/style.",
+                "suggested_fix": "Specify the target audience (e.g., 'for beginners', 'for experts') and desired tone (e.g., 'formal', 'casual')."   
+            }
+        ]
+    },
+    {
+        "file": "prompt2.txt",
+        "issues": [
+            {
+                "issue_type": "Redundancy",
+                "description": "Sentences are highly similar (similarity: 0.84): 'Explain how to bake sourdough bread.' and 'The explanation must be no longer than 100 words.'",
+                "suggested_fix": "Consider rephrasing or combining these sentences to avoid repetition and improve clarity."
+            },
+            {
+                "issue_type": "Redundancy",
+                "description": "Sentences are highly similar (similarity: 0.89): 'Explain how to bake sourdough bread.' and 'Include a comprehensive 10,000-word historical background on sourdough.'",
+                "suggested_fix": "Consider rephrasing or combining these sentences to avoid repetition and improve clarity."
+            },
+            {
+                "issue_type": "Redundancy",
+                "description": "Sentences are highly similar (similarity: 0.85): 'The explanation must be no longer than 100 words.' and 'Include a comprehensive 10,000-word historical background on sourdough.'",
+                "suggested_fix": "Consider rephrasing or combining these sentences to avoid repetition and improve clarity."
+            },
+            {
+                "issue_type": "Completeness",
+                "description": "Prompt asks to write/explain something but doesn't specify the target audience or desired tone/style.",
+                "suggested_fix": "Specify the target audience (e.g., 'for beginners', 'for experts') and desired tone (e.g., 'formal', 'casual')."   
+            },
+            {
+                "issue_type": "Contradiction",
+                "description": "Conflicting instructions detected: 'no longer than' and 'comprehensive' are both present.",
+                "suggested_fix": "Clarify the instructions to remove contradictory requirements."
+            }
+        ]
+    },
+    {
+        "file": "prompt3.txt",
+        "issues": [
+            {
+                "issue_type": "Redundancy",
+                "description": "Sentences are highly similar (similarity: 0.89): 'Design a test plan for an e-commerce checkout system.' and 'List the functional requirements.'",
+                "suggested_fix": "Consider rephrasing or combining these sentences to avoid repetition and improve clarity."
+            },
+            {
+                "issue_type": "Redundancy",
+                "description": "Sentences are highly similar (similarity: 0.83): 'Design a test plan for an e-commerce checkout system.' and 'Provide success criteria.'",
+                "suggested_fix": "Consider rephrasing or combining these sentences to avoid repetition and improve clarity."
+            },
+            {
+                "issue_type": "Redundancy",
+                "description": "Sentences are highly similar (similarity: 0.92): 'List the functional requirements.' and 'Provide success criteria.'",
+                "suggested_fix": "Consider rephrasing or combining these sentences to avoid repetition and improve clarity."
+            }
+        ]
+    },
+    {
+        "file": "prompt4.txt",
+        "issues": [
+            {
+                "issue_type": "Redundancy",
+                "description": "Sentences are highly similar (similarity: 0.87): 'Write an email to John Smith at john.' and 'smith@example.'",      
+                "suggested_fix": "Consider rephrasing or combining these sentences to avoid repetition and improve clarity."
+            },
+            {
+                "issue_type": "Redundancy",
+                "description": "Sentences are highly similar (similarity: 0.86): 'Write an email to John Smith at john.' and 'meeting schedule.'",   
+                "suggested_fix": "Consider rephrasing or combining these sentences to avoid repetition and improve clarity."
+            },
+            {
+                "issue_type": "Redundancy",
+                "description": "Sentences are highly similar (similarity: 0.91): 'Write an email to John Smith at john.' and 'Include his phone number for confirmation.'",
+                "suggested_fix": "Consider rephrasing or combining these sentences to avoid repetition and improve clarity."
+            },
+            {
+                "issue_type": "Redundancy",
+                "description": "Sentences are highly similar (similarity: 0.89): 'smith@example.' and 'meeting schedule.'",
+                "suggested_fix": "Consider rephrasing or combining these sentences to avoid repetition and improve clarity."
+            },
+            {
+                "issue_type": "Redundancy",
+                "description": "Sentences are highly similar (similarity: 0.90): 'smith@example.' and 'Include his phone number for confirmation.'", 
+                "suggested_fix": "Consider rephrasing or combining these sentences to avoid repetition and improve clarity."
+            },
+            {
+                "issue_type": "Redundancy",
+                "description": "Sentences are highly similar (similarity: 0.81): 'com explaining the' and 'Include his phone number for confirmation.'",
+                "suggested_fix": "Consider rephrasing or combining these sentences to avoid repetition and improve clarity."
+            },
+            {
+                "issue_type": "Redundancy",
+                "description": "Sentences are highly similar (similarity: 0.91): 'meeting schedule.' and 'Include his phone number for confirmation.'",
+                "suggested_fix": "Consider rephrasing or combining these sentences to avoid repetition and improve clarity."
+            },
+            {
+                "issue_type": "PII/Secret",
+                "description": "Keyword 'phone number' detected, indicating a request for or presence of PII.",
+                "suggested_fix": "Avoid including or requesting sensitive personal identifiable information (PII) in prompts."
+            },
+            {
+                "issue_type": "PII/Secret",
+                "description": "Potential email address detected.",
+                "suggested_fix": "Remove or redact personal identifiable information (PII)."
+            },
+            {
+                "issue_type": "Completeness",
+                "description": "Prompt asks to write/explain something but doesn't specify the target audience or desired tone/style.",
+                "suggested_fix": "Specify the target audience (e.g., 'for beginners', 'for experts') and desired tone (e.g., 'formal', 'casual')."   
+            }
+        ]
+    }
+]
